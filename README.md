@@ -6,5 +6,4 @@
 
 ###
 
-Hello
-
+This reposotory is set up to support teaching undegraduate students the principles and applications of communication systems.
