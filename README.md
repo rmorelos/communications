@@ -1,4 +1,5 @@
-# `rgb(9, 200, 118)` Lecture notes on Communication Systems 
+`rgb(9, 200, 118)` 
+# Lecture notes on Communication Systems 
 ## by Robert Morelos-Zaragoza
 ### January 2026
 ###
