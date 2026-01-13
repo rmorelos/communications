@@ -1,7 +1,5 @@
 # Lecture notes on Communication Systems 
-
-## Robert Morelos-Zaragoza
-
+## by Robert Morelos-Zaragoza
 ### January 2026
 ###
 
