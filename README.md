@@ -6,4 +6,5 @@
 
 ###
 
-This reposotory is set up to support teaching undegraduate students the principles and applications of communication systems.
+This reposotory is set up to support teaching undegraduate students the principles and applications of communication systems. It includes laboratory
+experimental procedures, demonstrations with software radios and sets of homework sets and their solutions.
