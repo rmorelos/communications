@@ -1,4 +1,4 @@
-# **Lecture notes on Communication Systems**
+# **Lecture notes on Communication Systems**  
 ### Robert Morelos-Zaragoza, San Jose State University
 ###
 
