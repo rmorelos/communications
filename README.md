@@ -7,7 +7,10 @@
 ###
 
 This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes laboratory
-experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged in two parts:
+experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. 
+
+
+The material is arranged in two parts:
 
     
 
