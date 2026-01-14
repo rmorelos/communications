@@ -44,13 +44,13 @@ Table of contents
 Table of contents
 1. Binary modulation schemes: Mapping and pulse shaping
 2. Polar mapping and NRZ pulses: ASK/2-PAM/BPSK
-3. Correlation receiver for 2-PAM/BPSK and its AWGN performance. Unipolar mapping and OOK analysis
+3. Correlation receiver for 2-PAM/BPSK and its error performance. Unipolar mapping and OOK analysis
 4. Matched filter implementation of a correlator and its advantages
 5. More than one bit: $M$-ary PAM 
-6. QPSK modulation as two orthongonal BPSK modulations
-7. 16-QAM modulation as two orthogonal 4-PAM modulations
+6. QPSK modulation as two orthongonal BPSK modulations. Error performance
+7. 16-QAM modulation as two orthogonal 4-PAM modulations. Nearest neighbor approximation on error performace
 8. Geometric representation of signals and quadrature modulation. Signal constellations
-9. $M$-ary QAM and PSK
+9. $M$-ary QAM and PSK.
 10. Bandlimited channels and the raised-cosine spectrum
 11. Error correcting coding I: SPC (3,2,2) code. Hamming codes
 12. Basic wireless channel modeling: Frequency selectivity (multipath) and time selectivity (fading)
