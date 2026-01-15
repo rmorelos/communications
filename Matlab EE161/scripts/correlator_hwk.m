@@ -1,0 +1,130 @@
+% File: correlator_hwk.m
+% Description: Illustration of line coding schemes and correlator outputs
+% EE 161. Spring 2015. San Jose State University.
+
+clear
+
+A = 1;                                   % Pulse amplitude
+T = 1;                                   % Bit duration
+bit = [1 0 1 1 0 1];
+N = length(bit);
+
+% Uncomment the four lines below if random bits are to be generated ...
+% seed = input('Enter your student ID: ');
+% rand('state',seed)
+% N = 20;                                  % Number of bits  
+% bit = round(rand(1,N));                  % Bit sequence
+
+polar = [ -A +A ];                       % Polar mapping
+M = 100;                                 % Oversampling ratio (must be even)
+T_bits = T*length(bit);                  % Duration of bit stream
+t = 1/M:1/M:T_bits ;                     % Time scale
+
+bit_M= [];
+for i=1:length(bit)
+    bit_M = [bit_M bit(i)*ones(1,M)];    % Oversampled bit stream
+end
+
+p_NRZ(1:M)=1;                            % NRZ pulse
+p_RZ(1:M/2)=1; p_RZ(M/2:M)=0;            % RZ pulse
+p_M(1:M/2)=-1; p_M(M/2:M)=1;             % Manchester pulse
+
+% (a) Unipolar NRZ
+for i=1:length(bit)
+    sum = 0;
+    for j=(i-1)*M+1:i*M
+        corr_UNRZ(j) = sum;
+        s_UNRZ(j) = bit(i)*A*p_NRZ(j-(i-1)*M);  
+        sum = sum + bit(i)*A*p_NRZ(j-(i-1)*M)*p_NRZ(j-(i-1)*M)/M;
+    end
+end
+
+% (b) Unipolar RZ
+for i=1:length(bit)
+    sum = 0;
+    for j=(i-1)*M+1:i*M
+        corr_URZ(j) = sum;
+        s_URZ(j) = bit(i)*A*p_RZ(j-(i-1)*M);
+        sum = sum + 2*bit(i)*A*p_RZ(j-(i-1)*M)*p_RZ(j-(i-1)*M)/M;
+    end
+end
+
+% (c) Polar NRZ
+for i=1:length(bit)
+    sum = 0;
+    for j=(i-1)*M+1:i*M
+        corr_PNRZ(j) = sum;
+        s_PNRZ(j) = polar(bit(i)+1)*p_NRZ(j-(i-1)*M);
+        sum = sum + polar(bit(i)+1)*p_NRZ(j-(i-1)*M)*p_NRZ(j-(i-1)*M)/M;
+    end
+end
+
+% (d) Polar RZ
+for i=1:length(bit)
+    sum = 0;
+    for j=(i-1)*M+1:i*M
+        corr_PRZ(j) = sum;
+        s_PRZ(j) = polar(bit(i)+1)*p_RZ(j-(i-1)*M);
+        sum = sum + 2*polar(bit(i)+1)*p_RZ(j-(i-1)*M)*p_RZ(j-(i-1)*M)/M;
+    end
+end
+
+% (e) AMI NRZ
+st = [-A*ones(1,M)];                    % Inital amplitude -A
+for i=1:length(bit)
+    sum = 0;
+    if bit(i), st = -st; end
+    for j=(i-1)*M+1:i*M
+        corr_AMI_NRZ(j) = sum;
+        AMI_NRZ(j) = bit(i)*st(j-(i-1)*M)*p_NRZ(j-(i-1)*M);
+        sum = sum + bit(i)*st(j-(i-1)*M)*p_NRZ(j-(i-1)*M)*p_NRZ(j-(i-1)*M)/M;
+    end
+end
+
+% (f) AMI RZ
+st = [-A*ones(1,M)];                    % Inital amplitude -A
+for i=1:length(bit)
+    sum = 0;
+    if bit(i), st = -st; end
+    for j=(i-1)*M+1:i*M
+        corr_AMI_RZ(j) = sum;
+        AMI_RZ(j) = bit(i)*st(j-(i-1)*M)*p_RZ(j-(i-1)*M);
+        sum = sum + 2*bit(i)*st(j-(i-1)*M)*p_RZ(j-(i-1)*M)*p_RZ(j-(i-1)*M)/M;
+    end
+end
+
+% (g) Manchester
+for i=1:length(bit)
+    sum = 0;
+    for j=(i-1)*M+1:i*M
+        corr_M(j) = sum;
+        s_M(j) = polar(bit(i)+1)*p_M(j-(i-1)*M);
+        sum = sum + polar(bit(i)+1)*p_M(j-(i-1)*M)*p_M(j-(i-1)*M)/M;
+    end
+end
+
+% Plot all signals
+figure(1)
+subplot(4,1,1)
+plot(t,bit_M,'k'); ylabel ('Bits'); axis ([ 0 T_bits  -0.1 1.1 ]), grid on
+set(gca,'YTick',[0 1])
+title('Example of pulse shaping for bit sequence [1 1 0 1 0 0 0 1 0 0 1 1 1 0 1 0]')
+subplot(4,1,2)
+plot(t,s_PNRZ,'k'); ylabel ('Polar NRZ'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+subplot(4,1,3)
+plot(t,AMI_RZ,'k'); ylabel ('AMI RZ'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+subplot(4,1,4)
+plot(t,s_M,'k'); ylabel ('Manchester'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+
+figure(2)
+subplot(4,1,1)
+plot(t,bit_M,'k'); ylabel ('Bits'); axis ([ 0 T_bits  -0.1 1.1 ]), grid on
+set(gca,'YTick',[0 1])
+title('Correlator outputs for bit sequence [1 1 0 1 0 0 0 1 0 0 1 1 1 0 1 0]')
+subplot(4,1,2)
+plot(t,corr_PNRZ,'k'); ylabel ('Polar NRZ'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+subplot(4,1,3)
+plot(t,corr_AMI_RZ,'k'); ylabel ('AMI RZ'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+subplot(4,1,4)
+plot(t,corr_M,'k'); ylabel ('Manchester'); axis ([ 0 T_bits  -1.1*A 1.1*A ]), grid on
+
