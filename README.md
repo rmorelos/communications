@@ -1,3 +1,4 @@
+    
 # **Lecture notes on Communication Systems**  
 ### Robert Morelos-Zaragoza, San Jose State University
 ###
@@ -6,8 +7,7 @@
 
 ###
 
-This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes laboratory
-experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged as follows:
+This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes lecture notes, MATLAB simulation scripts and models. laboratory experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged as follows:
 
     
 
@@ -49,22 +49,21 @@ Table of contents
 5. More than one bit: $M$-ary PAM 
 6. QPSK modulation as two orthongonal BPSK modulations and its error performance
 7. 16-QAM modulation as two orthogonal 4-PAM modulations. Nearest neighbor approximation on error performace
-8. Geometric representation of signals and quadrature modulation. Signal constellations
-9. $M$-ary QAM and PSK.
-10. Bandlimited channels and the raised-cosine spectrum
-11. Error correcting coding I: SPC (3,2,2) code. Hamming codes
-12. Basic wireless channel modeling: Frequency selectivity (multipath) and time selectivity (fading)
-13. Error performance of binary modulations over flat fading channels
-14. Error correcting coding II: Hamming distance and itsimpact on performance
-15. Signaling for time-selective fading channels: Interleaving techniques
-16. Noncoherent modulations for flat-fading channels
-17. The concept of diversity. Outage probaility
-18. Diversity combining techniques for multipath channels, Channel estimation with PN sequences
-19. Time-diversity techniques for multipath channels: RAKE demodulator. Adaptive Equalizer
-20. Frequency-diversity techniques for multipathchannels: Introduction. Multicarrier modulation
-21. OFDM: Spectral density. Symbol duration and Rate. Cyclic Prefix. One-tap equalization
-22. OFDM: Time-frequency interleaving.Error control coding
-23. Spatial diversity techniques for multipathchannels – Transmit diversity, Alamouti scheme. MIMO systems
+8. Geometric representation of signals and quadrature modulation. Signal constellations. $M$-ary QAM and PSK
+9. Bandlimited channels and the raised-cosine spectrum
+10. Error correcting coding I: SPC (3,2,2) code. Hamming codes
+11. Basic wireless channel modeling: Frequency selectivity (multipath) and time selectivity (fading)
+12. Error performance of binary modulations over flat fading channels
+13. Error correcting coding II: Hamming distance and itsimpact on performance
+14. Signaling for time-selective fading channels: Interleaving techniques
+15. Noncoherent modulations for flat-fading channels
+16. The concept of diversity. Outage probaility
+17. Diversity combining techniques for multipath channels, Channel estimation with PN sequences
+18. Time-diversity techniques for multipath channels: RAKE demodulator. Adaptive Equalizer
+19. Frequency-diversity techniques for multipathchannels: Introduction. Multicarrier modulation
+20. OFDM: Spectral density. Symbol duration and Rate. Cyclic Prefix. One-tap equalization
+21. OFDM: Time-frequency interleaving.Error control coding
+22. Spatial diversity techniques for multipathchannels – Transmit diversity, Alamouti scheme. MIMO systems
 
 
 ## **III. Problem sets**
