@@ -1,6 +1,8 @@
     
 # **Course notes on Communication Systems**  
 ### Robert Morelos-Zaragoza, San Jose State University
+### Email: [robert.morelos-zaragoza@sjsu.edu](mailto:robert.morelos-zaragoza@sjsu.edu)
+
 ###
 
 ![modern_comm](https://github.com/user-attachments/assets/8a52c246-8bf8-460a-9429-79439a7c1f00)
