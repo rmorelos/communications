@@ -12,7 +12,7 @@
 This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes lecture notes, MATLAB simulation scripts and models, laboratory experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged as follows:
 
     
-
+<br>
 
 ## **I. Fundamentals of RF communications (EE160) lectures**
 
@@ -50,6 +50,7 @@ TOPICS
 
 ## **IV. Problem sets in RF communications (EE160)**
 
+<br>
 
 ## **V. Digital-communications (EE161) lectures**
 
