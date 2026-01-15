@@ -16,7 +16,8 @@ This repository is set up to provide support material for teaching undegraduate 
 
 ![image](https://github.com/user-attachments/assets/7507e63a-e27b-4928-b76f-d92196331e04)
 
-Table of contents
+Topics
+
 1. A modern communication system
 2. Nonlinear amplifiers, harmonics and two-tone test
 3. Harmonics and the continuous-time Fourier series 
@@ -41,7 +42,8 @@ Table of contents
 
 ![3dq](https://github.com/user-attachments/assets/25697742-f1be-45ef-a752-f5ad2f6c9d1c)
 
-Table of contents
+Topics
+
 1. Binary modulation schemes: Mapping and pulse shaping
 2. Polar mapping and NRZ pulses: ASK/2-PAM/BPSK
 3. Correlation receiver for 2-PAM/BPSK and its error performance. Unipolar mapping and OOK analysis
