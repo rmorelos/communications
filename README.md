@@ -3,18 +3,19 @@
 ### Robert Morelos-Zaragoza, San Jose State University
 ###
 
-<img width="374" height="374" alt="16QAM_SDR_receiver" src="https://github.com/user-attachments/assets/6ac289ab-2020-4160-8263-c31c86bbc65b" />
+![modern_comm](https://github.com/user-attachments/assets/8a52c246-8bf8-460a-9429-79439a7c1f00)
 
 ###
 
-This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes lecture notes, MATLAB simulation scripts and models. laboratory experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged as follows:
+This repository is set up to provide support material for teaching undegraduate students the principles and applications of communication systems. It includes lecture notes, MATLAB simulation scripts and models, laboratory experimental procedures, demonstrations with software radios, as well as sets of homework sets and their solutions. The material is arranged as follows:
 
     
 
 
-## **I. Fundamentals of RF communications (EE160)**
+## **I. Fundamentals of RF communications (EE160) lectures**
 
 ![image](https://github.com/user-attachments/assets/7507e63a-e27b-4928-b76f-d92196331e04)
+
 
 Topics
 
@@ -38,9 +39,16 @@ Topics
 18. Pulse sequences and binary modulation schemes usign AM and FM
 
 
-## **II. Digital-communications (EE161)**
+## **II. MATLAB RF Communications (EE160)**
 
-![3dq](https://github.com/user-attachments/assets/25697742-f1be-45ef-a752-f5ad2f6c9d1c)
+## **III. Laboratory experiments in RF communications (EE160)**
+
+## **IV. Problem sets in RF communications (EE160)**
+
+
+## **V. Digital-communications (EE161) lectures**
+
+<img width="374" height="374" alt="16QAM_SDR_receiver" src="https://github.com/user-attachments/assets/6ac289ab-2020-4160-8263-c31c86bbc65b" />
 
 Topics
 
@@ -68,11 +76,11 @@ Topics
 22. Spatial diversity techniques for multipathchannels – Transmit diversity, Alamouti scheme. MIMO systems
 
 
-## **III. Problem sets**
-  
 
-## **IV. Laboratory experiments for RF communications (EE160)**
-  
+## **VI. MATLAB Digital Communications (EE161)**
 
-## **V. Experimental demos for digital communications (EE161)**
   
+## **VII. Experimental demos in digital communications (EE161)**
+
+## **VIII. Problem sets in RF communications (EE161)**
+
