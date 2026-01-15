@@ -53,7 +53,11 @@ TOPICS
 
 <img width="374" height="374" alt="16QAM_SDR_receiver" src="https://github.com/user-attachments/assets/6ac289ab-2020-4160-8263-c31c86bbc65b" />
 
-Topics
+<details>
+
+<summary>
+TOPICS
+</summary>
 
 1. Binary modulation schemes: Mapping and pulse shaping
 2. Polar mapping and NRZ pulses: ASK/2-PAM/BPSK
@@ -67,7 +71,7 @@ Topics
 10. Error correcting coding I: SPC (3,2,2) code. Hamming codes
 11. Basic wireless channel modeling: Frequency selectivity (multipath) and time selectivity (fading)
 12. Error performance of binary modulations over flat fading channels
-13. Error correcting coding II: Hamming distance and itsimpact on performance
+13. Error correcting coding II: Hamming distance and its impact on performance
 14. Signaling for time-selective fading channels: Interleaving techniques
 15. Noncoherent modulations for flat-fading channels
 16. The concept of diversity. Outage probaility
@@ -75,9 +79,9 @@ Topics
 18. Time-diversity techniques for multipath channels: RAKE demodulator. Adaptive Equalizer
 19. Frequency-diversity techniques for multipathchannels: Introduction. Multicarrier modulation
 20. OFDM: Spectral density. Symbol duration and Rate. Cyclic Prefix. One-tap equalization
-21. OFDM: Time-frequency interleaving.Error control coding
-22. Spatial diversity techniques for multipathchannels – Transmit diversity, Alamouti scheme. MIMO systems
-
+21. OFDM: Time-frequency interleaving. Error control coding
+22. Spatial diversity techniques for multipath channels – Transmit diversity, Alamouti scheme. MIMO systems
+</details>
 
 
 ## **VI. MATLAB Digital Communications (EE161)**
