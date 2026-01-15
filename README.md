@@ -16,10 +16,13 @@ This repository is set up to provide support material for teaching undegraduate 
 
 ![image](https://github.com/user-attachments/assets/7507e63a-e27b-4928-b76f-d92196331e04)
 
+<details>
 
-Topics
+<summary>
+TOPICS
+</summary>
 
-1. A modern communication system
+1. [Introduction. A modern communication system](https://github.com/rmorelos/communications/blob/main/Lectures%20EE160/00_Lecture%201.pdf)
 2. Nonlinear amplifiers, harmonics and two-tone test
 3. Harmonics and the continuous-time Fourier series 
 4. The continuous-time Fourier transform. Basic properties and transform pairs
@@ -37,7 +40,7 @@ Topics
 16. Noise performance of AM and FM systems: Signal-to-noise ratio (SNR)
 17. Noise figure
 18. Pulse sequences and binary modulation schemes usign AM and FM
-
+</details>
 
 ## **II. MATLAB RF Communications (EE160)**
 
